@@ -3,6 +3,9 @@ package lamdas;
 public class Capital {
 
 	
+	private String pais;
+	private String capital;
+	
 	
 	public String getPais() {
 		return pais;
@@ -16,8 +19,7 @@ public class Capital {
 	public void setCapital(String capital) {
 		this.capital = capital;
 	}
-	private String pais;
-	private String capital;
+	
 	public Capital(String pais, String capital) {
 		super();
 		this.pais = pais;
