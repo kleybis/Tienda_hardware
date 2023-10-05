@@ -49,6 +49,7 @@ public class Ejercicio2 {
 				linea=T.nextLine();
 				
 				bw.close();
+				br.close();
 			}
 			
 		}catch(IOException e) {

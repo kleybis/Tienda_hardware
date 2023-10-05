@@ -31,9 +31,12 @@ public class EjemploCapitales {
 		capitalList.forEach((x,y)->System.out.println(" las capitales listadas"+ y.getCapital()));
 		System.out.println("=================================");
 		//capitalList.forEach((x,y)->System.out.println(y.getPais().compareTo(y.getPais())));
-		List<Capital>CapitalLIST=capitalList.values().stream().collect(Collectors.toList());
-		CapitalLIST.sort((x,y)->x.getPais().compareTo(x.getPais()));
-		System.out.println(CapitalLIST);
+		
+		//List<Capital>CapitalLIST=capitalList.values().stream().map(x->x.getPais()).collect(Collectors.toList());
+		//CapitalLIST.sort((x,y)->x.getPais().compareTo(x.getPais()));
+		///System.out.println(CapitalLIST);
+		
+	
 		
 		
 		
