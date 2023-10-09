@@ -14,7 +14,7 @@ public class Ejercicio3 {
 
 	private static String numPalabras(String texto) {
 		// TODO Auto-generated method stub
-		texto=texto.replaceAll("[,;:-_]", cadena);
+		texto=texto.replaceAll("[,;:-_]", "");
 		
 		return null;
 	}
