@@ -1,6 +1,6 @@
 package EjemplosProcesos;
 
-public class Sumador {
+public class SumadorBucle {
 
 	
 	public static int suma(int n1, int n2) {
