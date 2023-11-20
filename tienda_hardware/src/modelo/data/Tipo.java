@@ -3,15 +3,19 @@ package modelo.data;
 public class Tipo {
 
 	private int id_tipo;
-	private  nombre_tipo NOMBRE;
+	private String nombre;
+	public Tipo(int id_tipo, String nombre) {
+		super();
+		this.id_tipo = id_tipo;
+		this.nombre = nombre;
+	}
 	public Tipo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Tipo(int id_tipo, nombre_tipo string) {
-		super();
-		this.id_tipo = id_tipo;
-		NOMBRE = string;
+	@Override
+	public String toString() {
+		return "Tipo [id_tipo=" + id_tipo + ", nombre=" + nombre + "]";
 	}
 	public int getId_tipo() {
 		return id_tipo;
@@ -19,17 +23,12 @@ public class Tipo {
 	public void setId_tipo(int id_tipo) {
 		this.id_tipo = id_tipo;
 	}
-	public nombre_tipo getNOMBRE() {
-		return NOMBRE;
+	public String getNombre() {
+		return nombre;
 	}
-	public void setNOMBRE(nombre_tipo nOMBRE) {
-		NOMBRE = nOMBRE;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
-	@Override
-	public String toString() {
-		return "Tipo [id_tipo=" + id_tipo + ", NOMBRE=" + NOMBRE + "]";
-	}
-	
 	
 	
 }

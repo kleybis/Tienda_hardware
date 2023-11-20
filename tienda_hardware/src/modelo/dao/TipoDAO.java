@@ -23,7 +23,7 @@ public class TipoDAO {
 		connection=con.getJdbcConnection();
 		try {
 			Statement statement = connection.createStatement();
-			String sql = "insert into tipo(NOMBRE_TIPO2) values('"+tipo.getNOMBRE()+"')";
+			String sql = "insert into tipo(NOMBRE_TIPO2) values('"+tipo.getNombre()+"')";
 			
 			boolean rowInserted=statement.executeUpdate(sql) > 0;
 			
