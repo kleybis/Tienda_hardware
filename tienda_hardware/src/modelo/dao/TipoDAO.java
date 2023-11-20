@@ -68,7 +68,7 @@ public class TipoDAO {
 		connection= con.getJdbcConnection();	
 		try {
 			Statement statement = connection.createStatement();
-		    String sql= "select ID_tipo, NOMBRE_TIPO2 from marcas";
+		    String sql= "select ID_tipo, NOMBRE_TIPO2 from tipo";
 			rs=statement.executeQuery(sql);
 			while(rs.next()) {
 				
