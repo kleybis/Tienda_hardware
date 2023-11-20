@@ -61,7 +61,7 @@ public class TipoDAO {
 				}
 	
 	
-	public static List<Tipo> seleccionarMarcas(){
+	public static List<Tipo> seleccionarTipos(){
 		List<Tipo> Tipos= new ArrayList<Tipo>();
 		ResultSet rs;
 		Conexion con =new Conexion();
