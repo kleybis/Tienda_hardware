@@ -1,9 +1,11 @@
 package modelo.dao;
 
-import java.beans.Statement;
+
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -95,6 +97,8 @@ public class TipoDAO {
 		
 		Conexion con= new Conexion();
 		connection=con.getJdbcConnection();
+		try {
+			
 		
 		Statement statement= connection.createStatement();
 		String sql= "select ID_tipo from tipo where NOMBRE_TIPO2= '"+nombre+"'";
@@ -104,6 +108,9 @@ public class TipoDAO {
 			ID_tipo=rs.getInt(1);
 		}
 		
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
 		return ID_tipo;
 		
 	}
